@@ -19,7 +19,7 @@ node {
       nuestraapp.push()
      }
    }
-   steps {
+   stage('Sonar') { {
      withSonarQubeEnv('My SonarQube Server') {
        sh 'mvn clean package sonar:sonar'
      }
