@@ -19,7 +19,7 @@ node {
       nuestraapp.push()
      }
    }
-   stage('Sonar') { 
+   stage('sonarScanner') { 
      withSonarQubeEnv() {
        sh 'mvn clean package sonar:sonar'
      }
